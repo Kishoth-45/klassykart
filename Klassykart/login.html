@@ -13,7 +13,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            background-color: rgb(12, 1, 22);
             margin: 0;
             padding: 0;
             width: 100%;
@@ -58,77 +57,59 @@
             margin-left: 40%;
             width: 300px;
             background: transparent;
-            background-color: rgb(12, 1, 22);
-            border: 5px solid #0ef;
-            box-shadow: 0 0 5px #0ef,0 0 5px #0ef,;
-            padding: 10px;
-            color: white;
+            border: 3px solid rgb(18, 3, 58);
+            padding: 4px;
+            color: black;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 10px;
             font-family: "Poppins", sans-serif;
         }
-        .login:hover {
-            border: 5px solid #0ef;
-            box-shadow: 0 0 10px #0ef, inset 0 0 10px #0ef;
-        }
         .login div {
-            padding: 15px
+            padding: 14px
         }
         .login h2 {
             font-size: 40px;
             text-align: center;
-            color: #0ef;
         }
         .inputbox {
             text-align: center;
         }
         .forgot a {
-            color: #0ef;
             text-decoration: none;
             margin-left: 10px;
     
         }
         .forgot a:hover {
-            text-decoration: underline solid 1.3px skyblue;
+            text-decoration: underline solid;
         }
         button {
             position: relative;
             width: 90%;
             margin-left: 10px;
             height: 40px;
-            background-color: aqua;
-            border: 1px solid #0ef;
+            background-color: rgb(45, 8, 177);
+            border: 1px solid;
             border-radius: 8px;
             outline: none;
-            color: rgb(24, 1, 1);
+            color: white;
             font-size: 15px;
             font-family: "Poppins", sans-serif;
             cursor: pointer;
-        }
-        button:hover {
-            color: black;
-            box-shadow: 0 0 5px #0ef,0 0 5px #0ef;
-            text-shadow: 0 0 10px rgb(170, 232, 236), 0 0 10px #0ef;
         }
         .register {
             text-align: center;
             font-size: 13px;
         }
         .register a {
-            color: skyblue;
             text-decoration: none;
         }
         .register a:hover {
-            color: rgb(185, 236, 236);
             text-decoration: underline ;
-            text-shadow: 0 0 10px rgb(170, 232, 236), 0 0 10px #0ef;
         }
         .forgot a:hover {
-            color: rgb(185, 236, 236);
             text-decoration: underline ;
-            text-shadow: 0 0 10px rgb(170, 232, 236), 0 0 10px #0ef;
         }
     </style>
 </head>
@@ -138,8 +119,8 @@
         <ul>
             <li style="float: left;">
                 <img src="images/klassy kart.jpg" alt="" width="150px" height="50px"></li>
-               <li class="float"><a href="#contact"><i class="fa-solid fa-phone"></i> </i>CONTACT</a></li>
-               <li class="float"><a href=""><i class="fa-solid fa-cart-shopping"></i> PRODUCTS</a></li>
+               <li class="float"><a href="index.html"><i class="fa-solid fa-phone"></i> </i>CONTACT</a></li>
+               <li class="float"><a href="index.html"><i class="fa-solid fa-cart-shopping"></i> PRODUCTS</a></li>
                <li class="float"><a href="login.html"><i class="fa-solid fa-user"></i> LOGIN</a></li>
                <li class="float"><a href="register.html"><i class="fa-regular fa-address-card"></i> REGISTER</a></li>
                <li class="float"><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
@@ -158,13 +139,13 @@
                     <input type="password" placeholder="password">
                 </div>
                 <div class="forgot">
-                    <a href="">Forgot password</a>
+                    <a href=""><b>Forgot password</b></a>
                 </div>
                 <div class="buttonlog">
                     <button type="submit">Login</button>
                 </div>
                 <div class="register">
-                    Don't have an account? <a href="./register.html">Register</a>
+                   <b>Don't have an account? <a href="./register.html">Register</a></b>
             </form> <br>
         </div>
     </center>

@@ -1,7 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
     margin: 0;
-    color: black;
 }
 /* navigation bar */
 .header ul {
@@ -9,11 +7,12 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(11, 2, 34);
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 50px;
+    z-index: 1;
 }
 .header li {
     float: right;
@@ -36,37 +35,32 @@ body {
 }
 
 /* products */
+.ad {
+    box-shadow: 0 4px 40px 10px rgba(70, 55, 55, 0.1);
+    margin-top: 60px;
+}
 .pdbar {
     display: flex;
-    color: blueviolet;
     font-family: "Josefin Sans", sans-serif;
     justify-content: space-between;
     height: 60px;
     padding: 0 20px;
 }
 
-.pdbar a {
-    text-decoration: none;
-    color: red;
-}
-
-.pdbar a:hover {
-    text-decoration: underline 2px solid red;
-}
-
-/* products */
+/* products */ 
 .container {
     display: flex;
-    color: black;
     flex-flow: row wrap;
     padding: 15px 7px;
     justify-content: space-around;
+    background-color: white;
 }
 
 .container div {
-    background-color: rgb(225, 216, 235);
+    background-color: white;
+    box-shadow: 0 4px 20px 4px rgba(70, 55, 55, 0.1);
     padding: 20px 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     text-align: center;
     border-radius: 5px;
     flex-basis: 22%;
@@ -77,7 +71,7 @@ body {
     transform: scale(1.04,1.04);
 }
 .container h3 {
-    color: yellow;
+    color: rgb(255, 51, 0);
 }
 
 .container h2 {
@@ -107,14 +101,14 @@ body {
 
 /* footer  */
 .footer {
-    color: white;
-    background-color: rgb(31, 3, 54);
-    font-size: 15px;
+    color: black;
+    box-shadow: 0 4px 30px 10px rgba(70, 55, 55, 0.1);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .footer div {
@@ -124,50 +118,57 @@ body {
 /* footer class */
 .shop {
     padding: 10px;
-}
-
-.shop h1 {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
-.shop p {
-    font-family: "Niramit", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+    font-size: 15px;
 }
 
 .terms {
-    padding: 30px;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 20px;
+    text-align: justify;
 }
 
 .terms ul {
     list-style-type: none;
-    padding: 30px;
+    margin-left: -39px;
 }
-
+.terms li {
+    padding: 2px;
+}
 .terms a {
-    color: white;
+    color: black;
     text-decoration: none;
-    padding-top: 20px;
 }
 
 .terms a:hover {
-    text-decoration: 1.4px underline solid rgb(116, 86, 146);
+    text-decoration: 1.4px underline solid rgb(0, 0, 0);
 }
 
-.socialmedia {
-    padding: 20px;
-
+.socialmedia{
+    text-align: center;
+}
+.socialmedia p {
+    font-size: 35px;
+}
+.socialmedia p i {
+    padding: 7px;
+}
+.socialmedia p .fb {
+    color: rgb(38, 0, 255);
+}
+.socialmedia p .insta {
+    color: rgb(248, 8, 88);
+}
+.socialmedia p .linkdin {
+    color: rgb(46, 46, 250);
+}
+.socialmedia p .twitter {
+    color: black;
+}
+.socialmedia p .yt {
+    color: red;
+}
+.socialmedia p .tele {
+    color: rgb(0, 162, 255);
 }
 
-.contact {
-    padding: 20px;
+.contact h1 {
+    font-size: 50px;
 }
